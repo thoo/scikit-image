@@ -300,7 +300,7 @@ p.sphx-glr-signature a.reference.external {
 }
 
 a.copybtn {
-    background: transparent no-repeat none;
+    background: transparent no-repeat none !important;
     border: none;
     position: absolute;
     top: 0;
@@ -309,15 +309,25 @@ a.copybtn {
     width: 1em;
     height: 1.6em !important;
     padding: 0 2px 0px !important;
-    text-shadow: none;
-  }
+    text-shadow: none !important;
+    }
 
+.o-tooltip--left:hover:after {
+    top: -4px !important;
+    left: 115% !important;
+    z-index: 100 !important;
+    transform: translateX(0%) translateY(0) !important;
+}
 
-  .o-tooltip--left:after {
+.o-tooltip--left:after {
+    text-shadow: none !important;
     opacity: 0;
     font-family: monospace !important;
     font-weight: bold;
     font-size: 13px !important;
     background: #3F556B !important;
+    top: -4px !important;
+    left: 115% !important;
     z-index: 100 !important;
+    transform: translateX(10%) translateY(0) !important;
 }

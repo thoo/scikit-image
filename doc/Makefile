@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 PYTHON        ?= python
-SPHINXOPTS    ?= -j $(shell nproc)
+SPHINXOPTS    ?= -j $(shell sysctl -n hw.ncpu)
 SPHINXBUILD   ?= $(PYTHON) -m sphinx
 SPHINXCACHE   ?= build/doctrees
 PAPER         ?=

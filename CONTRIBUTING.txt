@@ -329,7 +329,7 @@ To rebuild a full clean documentation, run:
 .. code:: sh
 
     make clean
-    make SPHINXOPTS= html
+    make html
 
 Requirements
 ~~~~~~~~~~~~
